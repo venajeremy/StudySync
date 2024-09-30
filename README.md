@@ -33,7 +33,7 @@ past in the path)
 
 (remember the password you give mysql we will remove later it for the sake of development)
 
-### Pre-Setup (USE IF ZIPPED FILES DON'T WORK):
+### Pre-Setup:
 
 Make folder for project
 
@@ -43,7 +43,7 @@ Navigate to folder
 
 run: git init
 
-run: git remote add origin git@github.com:bazayd/OnlineFoodStore
+run: git remote add origin git@github.com:venajeremy/StudySync
 
 run: git pull origin main (if this doesn't work try running git branch main and then try again)
 
