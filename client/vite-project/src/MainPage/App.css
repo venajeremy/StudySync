@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+/*Below is for the category selection bar (categorybar) */
+.categorybar ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    list-style: none;
+    padding: 0;
+    margin-left: 170px;
+}
+
+.categorybar ul::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 10px; /* Height of the scrollbar */
+}
+
+/* Track */
+.categorybar ul::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255); /* Background color of the scrollbar track */
+}
+
+/* Handle */
+.categorybar ul::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners of the scrollbar handle */
+}
+
+/* Handle on hover */
+.categorybar ul::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(95, 95, 95); /* Color of the scrollbar handle on hover */
+}
+
+/* Corner */
+.categorybar ul::-webkit-scrollbar-corner {
+    background-color: transparent; /* Background color of the scrollbar corner */
+}
+
+/* Resize */
+.categorybar ul::-webkit-scrollbar-thumb:active {
+    background-color: rgb(37, 37, 37); /* Color of the scrollbar handle when dragging */
+}
+
+.categorybar ul li{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.category-icon.selected {
+    flex-direction: column;
+    height: 175px;
+    width: 200px;
+    border: 4px solid blue;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.category-icon.unselected{
+    flex-direction: column;
+    height: 175px;
+    width: 200px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+  
+.category-icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.category-icon:hover{
+    transform: scale(1.15);
+}
+
+.category-text {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 25px;
+    white-space: normal;
+    height: 60px;
+    overflow-y: auto;
+}
+
+.Category-Images{
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+}
+
+.categoryBarHeaders{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+/*Below is for the scrolling through indiviual items (categoryscroll) */
+
+.categoryscroll{
+    overflow-x: auto;
+    white-space: nowrap;
+    list-style: none;
+    padding: 0;
+    margin-left: 175px;
+}
+
+.categoryscroll ul{
+    list-style: none;
+}
+
+.categoryscroll ul::-webkit-scrollbar {
+    display: none; 
+}
+
+.categoryscroll-sections {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 1575px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.categoryscroll-content{
+    display: inline-flex;
+}
+
+.categoryscroll-content li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 0 0 auto;
+    width: 125px;
+}
+
+.categoryscroll-images{
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.categoryscroll-title, .categoryscroll-text{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.categoryscroll-title{
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.categoryscroll-text{
+    color: grey;
+    font-weight: normal;
+}
+
+.categoryscroll-text, .categoryscroll-title {
+    word-wrap: break-word;
+}
+
+.categoryscroll-name, .categoryscroll-description, .categoryscroll-price, 
+.categoryscroll-weight, .categoryscroll-totalprice, .categoryscroll-totalweight, 
+.categoryscroll-stock, .categoryscroll-category{
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow-y: auto;
+    height: 120px;
+}
+
+.categoryscroll-name, .categoryscroll-category{
+    width: 100px;
+}
+
+.categoryscroll-description{
+    min-width: 250px;
+}
+
+.categoryscroll-price, .categoryscroll-weight, .categoryscroll-stock{
+    min-width: 100px;
+}
+
+.categoryscroll-totalprice, .categoryscroll-totalweight{
+    min-width: 150px;
+}
+
+.add-to-cart-button {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.quantity-control{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.quantity-control button{
+    font-size: 25px;
+    padding: 2px;
+    margin: 10px;
+}
+
+/*Left Menu Bar*/
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+    width: 175px;
+    background-color: black;
+    padding: 1em;
+    overflow: auto;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.menu li{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.menuText{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.sortsText:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: yellow;
+    font-weight: bold;
+}
+
+.reponseText{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.adminContainer {
+    position: relative;
+}
+
+.adminPanel {
+    position: absolute;
+    bottom: -370px;
+    left: 25px;
+    display: grid;
+}
+
+.adminPanel2 {
+    position: absolute;
+    bottom: -590px;
+    left: 25px;
+    display: grid;
+}
+
+.adminForm input{
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.adminForm input:hover {
+    opacity: 60%;
+    
+}
+
+.adminForm input::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.adminPanel2 button {
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.adminPanel2 button:hover {
+    background-color: #c7c7c7;
+    opacity: 50%;
+}
+
+.adminPanel2 button:active {
+    opacity: 80%;
+    background-color: #494242;
+}
+
+.adminPanel button {
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.adminPanel button:hover {
+    background-color: #c7c7c7;
+    opacity: 50%;
+}
+
+.adminPanel button:active {
+    opacity: 80%;
+    background-color: #494242;
+}
+
+
+/*(UNUSED) CSS for Popups
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+  
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-image {
+    flex: 1;
+    height: auto;
+    width: 250px;
+}
+  
+.modal-details {
+    flex: 2;
+}
+  
+.add-to-cart-button {
+    flex: 1;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.quantity-control{
+    font-size: 25px;
+}
+
+.quantity-control button{
+    font-size: 25px;
+    padding: 2px;
+}
+*/
