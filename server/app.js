@@ -199,7 +199,9 @@ app.post("/users/register", async (req, res) => {
 
 // user login backend api handler
 app.post("/users/login", async (req, res) => {
+    
     const { username, password } = req.body    // sets details to parameters from post request body
+    console.log(username+" "+password);
     const { message, status, authed } = await login(username, password)  // uses our database function to create an sql entry
     
     // Give user session if login is valid
