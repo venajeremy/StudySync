@@ -20,9 +20,10 @@ const MainPage = () => {
                 // We have a session !
                 // Display user data on page
                 return response.json().then(data => {
-                    if(data.usertype === 2){
-                      setIsEmployee(true)
-                    }
+                  document.getElementById("mainMessage").textContent = "Hello "+data.user+", welcome to Study Sync!"
+                  if(data.usertype === 2){
+                    setIsEmployee(true)
+                  }
                 })
             }
         }
@@ -36,7 +37,8 @@ const MainPage = () => {
 
   return(
     <>
-      <p>Hello!!</p>
+      <p id="mainMessage">Welcome to StudySync!</p>
+      <br></br>
       <a href="/login/">Login</a>
       <br></br>
       <a href="/register/">Register</a>
