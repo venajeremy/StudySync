@@ -1,5 +1,6 @@
 import express from 'express'
 import path from 'path';
+import nodemailer from 'nodemailer';
 import session from 'express-session';
 import { deleteUser, getUserDatabaseInfo, getUserInformation, accountExist, createUser, login } from './database.js'
 
@@ -26,6 +27,32 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(dir, 'dist', 'index.html'));
 });
 
+// -------------------------------------- Node Mailer -----------------------------------
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'projectstudysync@gmail.com',
+    pass: 'cbbq srwe thii gvqp'
+  }
+});
+
+/* Send email example
+var mailOptions = {
+  from: 'projectstudysync@gmail.com',
+  to: 'student.email@sjsu.edu',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+*/
 
 // -------------------------------------- Admin Requests -----------------------------------
 
