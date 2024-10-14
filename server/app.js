@@ -224,6 +224,16 @@ app.post("/users/register", async (req, res) => {
     }
 })
 
+// Validate Email with auth token
+app.post("/users/auth", async (req, res) => {
+    const { authToken } = req.body    // grab token from request body
+    console.log(authToken);
+    //const { message, status } = await validateEmail(token)  // update the account to have email validated
+        
+    //res.status(status).type('text').send({ message })  // return message to user
+    
+})
+
 // user login backend api handler
 app.post("/users/login", async (req, res) => {
     

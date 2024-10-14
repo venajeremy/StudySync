@@ -25,8 +25,9 @@ export default defineConfig({
         login: resolve(root, 'login', 'index.html'),
         register: resolve(root, 'register', 'index.html'),
         MainPage: resolve(root, 'MainPage', 'index.html'),
-        AccountPage: resolve(root, 'AccountPage', 'index.html'),
-        Cart: resolve(root, 'Cart', 'index.html'),
+        auth: resolve(root, 'auth', 'index.html'),
+        
+
 
       }
     }
