@@ -1,6 +1,5 @@
 
 # Study Sync
-# Study Sync
 
 ## Table of contents
 
