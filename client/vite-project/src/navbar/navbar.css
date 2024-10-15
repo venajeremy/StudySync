@@ -1,0 +1,163 @@
+
+.spacer{
+    margin-top: 80px;
+}
+
+.wheel1{
+    transform: scale(0.5);
+    position: absolute;
+    top: 34%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+.wheel2{
+    max-width: 12px;
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+.inCart{
+    color: rgb(0, 0, 0);
+    /* font-family: "ADLaM Display", system-ui; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    top: 34%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+.inCartImageAndText{
+    position: relative;
+    display: inline-block;
+}
+
+.navbar{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black !important;
+    z-index: 100;
+    position: fixed;
+    top: -1px;
+    min-width: 1050px;
+    max-height: 100px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo{
+    min-height: auto;
+    width: 110px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.15);
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    cursor: pointer;
+    display: inline-block;
+}
+.Location_Icon{
+    min-height: auto;
+    width: 50px;
+    margin: 0px 10px;
+}
+.Profile_Icon{
+    min-height: auto;
+    width: 50px;
+    margin: 0px 10px;
+}
+.Cart_Icon{
+    min-height: auto;
+    width: 50px;
+    margin: 0px 10px;
+   
+}
+
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(1) .Cart_Wheel {
+        animation: logo-spin infinite 8s linear;
+    }
+}
+
+.text{
+    color: rgb(255, 255, 255);
+    /* font-family: "ADLaM Display", system-ui; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-right: 15px;
+    margin-left: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.icon-text a{
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.icon-text-location a{
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+}
+
+
+.icon-text a:hover {
+    transform: scale(1.2); /* Scale up the image on hover */
+}
+
+.searchbox{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.searchbox input{
+    padding: 6px;
+    border: 0;
+    outline: 0;
+    color: black;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 7px;
+    flex-grow: 1;
+}
+
+.Search_Icon{
+    min-height: auto;
+    width: 50px;
+    margin: 0px 10px;
+}

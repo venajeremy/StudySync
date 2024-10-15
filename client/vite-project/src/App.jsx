@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react'
-import OFSLogo from './assets/OFSLogo.png'
 import './App.css'
 
 

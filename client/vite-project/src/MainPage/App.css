@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
 /*Below is for the category selection bar (categorybar) */
 .categorybar ul {
     overflow-x: auto;

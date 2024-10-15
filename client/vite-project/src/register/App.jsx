@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import OFSLogo from '/assets/OFS Logo.png'
+import studysynclogo from '../assets/StudySyncTransparent.png'
 import './App.css'
 
 
@@ -43,7 +43,7 @@ function App() {
     <>
       <div>
         <a href="/MainPage/">
-          <img src={OFSLogo} alt="OFS Logos" className="logo" id="OFSLogo"/>
+          <img src={studysynclogo} alt="studysynclogo" id="studysynclogo"/>
         </a>
         <form onSubmit={(e) => {
           e.preventDefault(); // Prevent default form submission

@@ -53,6 +53,19 @@
     transition: transform 0.2s ease;
   }
   
+  #studysynclogo {
+    border-radius: 20px;
+    margin: 50px 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  
   #loginBtn {
     cursor: pointer;
     padding: 5px 10px;

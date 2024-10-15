@@ -50,7 +50,18 @@ form input {
   filter: drop-shadow(0 0 1em #000000);
 }
 
-
+#studysynclogo {
+  border-radius: 20px;
+  margin: 50px 40px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
 
 #registerBtn {
   cursor: pointer;
