@@ -1,3 +1,4 @@
+
 # Study Sync
 
 ## Table of contents
