@@ -1,0 +1,16 @@
+.desc-container {
+    display: flex;
+    align-items: center;
+}
+
+.desc-text {
+    align-items: center;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.desc-text h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Navbar from '../navbar/navbar.jsx'
+import Hero from './Hero/Hero.jsx'
+import Description from './Description.jsx'
 import './App.css'
-
-
 
 const MainPage = () => {
 
@@ -36,13 +37,11 @@ const MainPage = () => {
   }, [])
 
   return(
-    <>
-      <p id="mainMessage">Welcome to StudySync!</p>
-      <br></br>
-      <a href="/login/">Login</a>
-      <br></br>
-      <a href="/register/">Register</a>
-    </>
+    <div className="container">
+      <Navbar/>
+      <Hero/>
+      <Description/>
+    </div>
     
   )
   

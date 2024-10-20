@@ -339,6 +339,34 @@
     background-color: #494242;
 }
 
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    opacity: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+
 
 /*(UNUSED) CSS for Popups
 .modal-overlay {
